@@ -1,0 +1,20 @@
+<script>
+    /*
+    //PROBLEMA: TROCAR VARIÁVEIS
+    Faça um script que pede dois inteiros e armazene eles em duas variáveis.
+    Em seguida, troque o valor das variáveis, invertendo e exibindo o antes e o depois em uma janela de alert.
+    */
+
+    //ENTRADA
+    let num1 = Number(prompt("informe um número"))
+    let num2 = Number(prompt("informe outro número"))
+
+    //PROCESSAMENTO
+    let mudanca = num1;
+    num1 = num2
+
+    //SAÍDA
+    if (num1==mudanca) {alert("não necessita de troca")} else 
+    {alert(`antes, o número 1 era igual ${mudanca} e o número 2 era igual a ${num2}`)
+     alert(`agora, o número 1 é igual a ${num1} e o número 2 é igual a ${mudanca}`)}
+</script>
