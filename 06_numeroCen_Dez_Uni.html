@@ -11,11 +11,13 @@
     */
 
     //ENTRADA
-    const number=
+    const number= Number(prompt("digite um número de até 3 digitos"))
 
     //PROCESSAMENTO
-
+    const conta1 = Math.floor(number / 100)
+    const conta2 = Math.floor((number - 100 * conta1) / 10)
+    const conta3 = Math.ceil(((number - 100 * conta1) / 10) * 1)
     
     //SAÍDA
-
+    document.write(`${conta1} centenas, ${conta2} dezenas e ${conta3} unidades`)
 </script>
