@@ -5,11 +5,19 @@
     */    
    
     //ENTRADA
-
+    const ladoA = Number(prompt(" qual o tamanho do lado A de seu triangulo?"))
+    const ladoB = Number(prompt(" qual o tamanho do lado B de seu triangulo?"))
+    const ladoC = Number(prompt(" qual o tamanho do lado C de seu triangulo?"))
     
     //PROCESSAMENTO
     
     
     //SAÍDA
+    if (ladoA == ladoB && ladoA == ladoC && ladoB == ladoC) 
+    {document.write("seu triângulo é equilátero")}
+    else if (ladoA == ladoB || ladoA == ladoC || ladoB  == ladoC) 
+    {document.write("seu triângulo é isósceles ")} 
+    else 
+    {document.write("seu triângulo é escaleno")}
 
 </script>

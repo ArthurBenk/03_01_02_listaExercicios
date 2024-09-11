@@ -11,11 +11,32 @@
     */
 
     //ENTRADA
-
-
+    const telefone = prompt("Telefonou para a vítima").toUpperCase();
+    const local = prompt("Esteve no local do crime?").toUpperCase();
+    const proximidade = prompt("Mora perto da vítima?").toUpperCase();
+    const deve = prompt("Devia para a vítima?").toUpperCase();
+    const trabalho = prompt("Já trabalhou com a vítima?").toUpperCase();
+    let contador = 0
     //PROCESSAMENTO
+    if (telefone =="SIM") 
+    {contador = contador + 1} 
+    if (local =="SIM") 
+    {contador = contador + 1}
+    if (proximidade =="SIM") 
+    {contador = contador + 1}
+    if (deve =="SIM") 
+    {contador = contador + 1} 
+    if (trabalho =="SIM") 
+    {contador = contador + 1}
 
-    
     //SAÍDA
-
+    if (contador == 5)
+    {document.write("você é o assasino")} else 
+    if (contador == 3||contador == 4)
+    {document.write("você é um cúmplice")} else
+    if (contador == 2)
+    {document.write("você é um suspeito")} else
+    if (contador == 1||contador == 0)
+    {document.write("você é um inocente")} else
+    {document.write("valor invalido")}
 </script>
