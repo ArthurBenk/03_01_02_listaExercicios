@@ -10,11 +10,23 @@
     */
 
     //ENTRADA
-
-    
+    const preco = Number(prompt("digite o preço do produto"))
     //PROCESSAMENTO
-
-    
+    if (preco <= 280) { let porcentagem = preco * 0.2 
+        alert(`O aumento foi de R$${porcentagem}.`);
+    }
+    else if (preco <= 700 && preco > 280) {
+        let porcentagem = preco * 0.15
+        alert(`O aumento foi de R$${porcentagem}.`);
+    }
+    else if (preco <= 1500 && preco > 700) {
+        let porcentagem = preco * 0.10
+        alert(`O aumento foi de R$${porcentagem}.`);
+    }
+    else if (preco >= 1500) {
+        let porcentagem = preco * 0.5
+        alert(`O aumento foi de R$${porcentagem}.`);
+    }
+    else { alert("ops, algo deu errado") }
     //SAÍDA
-
 </script>

@@ -6,11 +6,14 @@
     */
 
     //ENTRADA
-
-    
+    const ano = Number(prompt("informe um ano"))
+    const bissexto = ano / 4
+    const conta1 =  Math.ceil(bissexto)
+    const conta2 =  Math.floor(bissexto)
     //PROCESSAMENTO
-
-    
+    if (conta1 == conta2) 
+    {alert("bissexto")} 
+    else {alert("não bissexto")}
     //SAÍDA
 
 </script>

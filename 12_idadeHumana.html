@@ -10,11 +10,14 @@
     */
 
     //ENTRADA
-
-    
+    const anos = Number(prompt("quantos anos tem o seu cão?"))
+    const porte = prompt("quantos o porte do seu cão?").toLowerCase()
+    let fator = 0
     //PROCESSAMENTO
-
-    
+    if (porte   == "pequeno") {fator = anos * 5} 
+    else if (porte == "médio") {fator  = anos * 6}
+    else if (porte == "grande") {fator = anos * 7}
+    else {fator = "(valor invalido)"}
     //SAÍDA
-
+    alert(`seu cão tem ${fator} anos`);
 </script>
