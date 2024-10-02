@@ -14,11 +14,39 @@
     */
 
     //ENTRADA
-
+    const combustivel = prompt(`qual combustível você deseja comprar?`).toLowerCase();
+    const litros = Number(prompt(`quantos litros você deseja comprar?`));
 
     //PROCESSAMENTO
-
     
+    if (combustivel == "a") {
+        if (litros <= 20) {
+            const preco = litros * 6.10
+            const desconto = preco * 0.03
+            const final = preco - desconto
+            alert(`o valor a ser pago é de ${final}`) 
+        }
+        else if (litros >= 20) {
+            const preco = litros * 6.10
+            const desconto = preco * 0.05
+            const final = preco - desconto
+            alert(`o valor a ser pago é de ${final}`) 
+        }
+    }
+    else if (combustivel == "g") {
+        if (litros <= 20) {
+            const preco = litros * 6.50
+            const desconto = preco * 0.04
+            const final = preco - desconto
+            alert(`o valor a ser pago é de ${final}`) 
+        }
+    }
+    else if (litros >= 20) {
+        const preco = litros * 6.50
+        const desconto = preco * 0.06
+        const final = preco - desconto
+        alert(`o valor a ser pago é de ${final}`) 
+    }
+    else { alert("ops, algo deu errado") }
     //SAÍDA
-
 </script>
